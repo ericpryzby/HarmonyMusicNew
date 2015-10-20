@@ -1330,6 +1330,7 @@ div.container h2 {
   width: 100%;
   height: 100%;
   background-color: #dfd9cc;
+  padding-bottom: 1px;
 }
 
 .accordion-menu2 {
