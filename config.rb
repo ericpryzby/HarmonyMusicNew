@@ -53,6 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -60,6 +62,13 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  activate :minify_javascript
+  activate :minify_html
+  activate :directory_indexes
+  activate :gzip
+  activate :imageoptim, pngout: false
+  activate :relative_assets
 
   # Enable cache buster
   # activate :asset_hash
