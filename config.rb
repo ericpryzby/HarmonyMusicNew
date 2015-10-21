@@ -55,6 +55,8 @@ set :images_dir, 'images'
 
 set :relative_links, true
 
+set :fonts_dir, 'fonts'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
