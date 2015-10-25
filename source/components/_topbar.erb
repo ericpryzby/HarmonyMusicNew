@@ -16,12 +16,20 @@
 				</li>
 			</ul> 
 		</div> <!-- top bar content left -->
-		<i class="cd-btn fa fa-bars"></i>
+		<!-- <i class="cd-btn fa fa-bars"></i> -->
+		<i>
+			<%= image_tag 'bars.svg', :class => 'cd-btn bars' %>
+		</i>
+
 		<div class="top-bar-content-right">
 			<ul>
 				<li><a href="#">News & Reviews</a></li>
 				<li><a href="#">My Account</a></li>
-				<li><a href="#">Shopping Cart<i class="fa fa-shopping-cart"></i> (0)</a></li>
+				<li>
+					<!-- <a href="#">Shopping Cart<i class="fa fa-shopping-cart"></i> (0)</a> -->
+					<a href="#">Shopping Cart<i><%= image_tag 'shoppingcart.svg', :class => 'shoppingcart'  %></i>(0)</a>
+
+				</li>
 			</ul>
 		</div> <!-- top bar content right -->
 	</nav>
